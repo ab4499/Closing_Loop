@@ -26,14 +26,11 @@ TL<-as.data.frame(bind_rows(TL1, TL2))
 
 Look at the data that Twitter has made available and do a quick visualization of Tweets over time.
 
-```{r}
-counts=table(TL$screenName)
-barplot(counts, las=2)
-
-#By time of day
-hist(TL1$created, breaks = "h")
-hist(TL2$created, breaks = "h")
-```
 
 ![hist1](https://github.com/ab4499/Closing_Loop/blob/master/graphs/hist1.png "github")
 ![hist2](https://github.com/ab4499/Closing_Loop/blob/master/graphs/hist2.png "github")
+
+![line1](https://github.com/ab4499/Closing_Loop/blob/master/graphs/line1.png "github")
+![line2](https://github.com/ab4499/Closing_Loop/blob/master/graphs/line2.png "github")
+
+
