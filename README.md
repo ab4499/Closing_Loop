@@ -55,4 +55,4 @@ Set the scheduler to send an email triggered by an activity threshold on Twitter
 
 [Jalayer Academy. (2016).Twitter Mining with R](https://www.youtube.com/watch?v=lT4Kosc_ers)
 
-[MuleSoft Videos. (2015). What is an API?](MuleSoft Videos. (2015). What is an API?)
+[MuleSoft Videos. (2015). What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
