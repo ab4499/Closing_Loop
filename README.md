@@ -44,3 +44,15 @@ Use the scheduler to schedule an email to myself.
 ### Threshold Generate
 
 Set the scheduler to send an email triggered by an activity threshold on Twitter. For example, an email is sent if a certain number of Tweets are returned by the search.
+
+## Relevant Materials
+
+[Whitehill, J., Williams, J. J., Lopez, G., Coleman, C. A., & Reich, J. (2015). Beyond prediction: First steps toward automatic intervention in MOOC student stopout.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2611750)
+
+[Liu, R., & Koedinger, K. R. (2017). Closing the Loop: Automated Data-Driven Cognitive Model Discoveries Lead to Improved Instruction and Learning Gains. Journal of Educational Data Mining, 9(1), 25-41.](https://eric.ed.gov/?id=EJ1155896)
+
+[Lawson, C., Beer, C., Rossi, D., Moore, T., & Fleming, J. (2016). Identification of “At Risk” Students Using Learning Analytics: The Ethical Dilemmas of Intervention Strategies in a Higher Education Institution. Educational Technology Research and Development, 64(5), 957–968.](https://link.springer.com/article/10.1007%2Fs11423-016-9459-0)
+
+[Jalayer Academy. (2016).Twitter Mining with R](https://www.youtube.com/watch?v=lT4Kosc_ers)
+
+[MuleSoft Videos. (2015). What is an API?](MuleSoft Videos. (2015). What is an API?)
