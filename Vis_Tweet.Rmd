@@ -1,0 +1,46 @@
+---
+title: "Visualization for Tweet Data"
+author: "Aidi Bian"
+date: "5/5/2019"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+TL1 <- searchTwitter("education data", n=300, since='2019-04-12', until='2019-04-13')
+TL2 <- searchTwitter("education data", n=300, since='2019-04-14', until='2019-04-15')
+TL1 <- do.call("rbind", lapply(TL1, as.data.frame))
+TL2 <- do.call("rbind", lapply(TL2, as.data.frame))
+TL<-as.data.frame(bind_rows(TL1, TL2))
+```
+
+You can now look at the data that Twitter has made available and do a quick visualization of your Tweets over time.
+
+```{r}
+counts=table(TL$screenName)
+barplot(counts, las=2)
+
+#By time of day
+hist(TL1$created, breaks = "h")
+hist(TL2$created, breaks = "h")
+```
+
+```{r}
+ggplot(TL1, aes(x=created, y=retweetCount))+
+  geom_line()
+```
+
+```{r}
+ggplot(TL2, aes(x=created, y=retweetCount))+
+  geom_line()
+```
+
+```{r}
+TL1$date<-1
+TL2$date<-2
+TL<-as.data.frame(bind_rows(TL1, TL2))
+ggplot(TL, aes(x=created, y=retweetCount, color=date))+
+  geom_line()
+```
+
