@@ -15,14 +15,6 @@ Step 4. Copy the details from Twitter App page.
 I can now download Tweets (but I can only search from the previous 6-7 days). Limit the number of tweets when searching for a popular term.
 
 ### Download Tweets
-```{r}
-library(dplyr)
-TL1 <- searchTwitter("education data", n=300, since='2019-04-30', until='2019-05-01')
-TL2 <- searchTwitter("education data", n=300, since='2019-05-02', until='2019-05-03')
-TL1 <- do.call("rbind", lapply(TL1, as.data.frame))
-TL2 <- do.call("rbind", lapply(TL2, as.data.frame))
-TL<-as.data.frame(bind_rows(TL1, TL2))
-```
 
 Look at the data that Twitter has made available and do a quick visualization of Tweets over time.
 
